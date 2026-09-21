@@ -16,7 +16,8 @@ Este projeto nasceu com um objetivo claro: tornar a preparação para o ENEM mai
 ---
 
 ## Tecnologias utilizadas
-* **java**
+* **java script**
+* **MySQL**
 * **HTML**
 * **css**
 
