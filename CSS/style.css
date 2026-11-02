@@ -1,0 +1,512 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    color: white;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    background:#09090b;
+    background-color: #000000;
+}
+canvas {
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    }
+body {
+    overflow-y: auto;
+}
+button {
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #09090b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    background-color: rgba(0,0,0,0.0);
+    border-radius:10px;
+    border: 1.5px solid #30E0FF ;
+    color: rgb(206, 179, 247);
+    font-size: 12px;
+    
+}
+
+#btnComecar {
+   border: 2px solid transparent;
+    background: linear-gradient(100deg,  #03040a, #03040a) padding-box,
+     linear-gradient(100deg,  #087bff, #353cff, #7025ff) border-box;
+    color: white;
+    filter: drop-shadow(0 0 5px #087bff);
+}
+#btnSMais {
+    color: white;
+    border: 2px solid transparent;
+    background: linear-gradient(100deg,  #03040a, #03040a) padding-box,
+     linear-gradient(100deg,  #087bff, #353cff, #7025ff) border-box;
+    color: white;
+    filter: drop-shadow(0 0 5px #087bff);
+}
+.colorText {
+    background: linear-gradient(90deg, #087bff, #1d23d8, #4815a7, #8f35f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    
+}
+ .logoEnigma {
+      width:20px;
+      height:20px;
+ }
+
+ #btnEntrar {
+    font-size: 10px;
+    border: 2px solid transparent;
+    background: linear-gradient(100deg,  #03040a, #03040a) padding-box,
+     linear-gradient(100deg,  #087bff, #353cff, #7025ff) border-box;
+    color: white;
+    filter: drop-shadow(0 0 5px #087bff);
+ } 
+
+ #btnCadastrar {
+    font-size: 10px;
+    border: 2px solid transparent;
+    background: linear-gradient(100deg,  #03040a, #03040a) padding-box,
+     linear-gradient(100deg,  #087bff, #353cff, #7025ff) border-box;
+    color: white;
+    filter: drop-shadow(0 0 5px #087bff);
+ } 
+
+ h1 {
+    text-align: center;
+    font-size:45px ;
+    margin-top: 100px;
+ }
+ 
+ p {
+    text-align: center;
+ }
+ 
+ 
+ h2 {
+    
+    text-align: center;
+}
+ 
+.text.center {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.espaco {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.aling {
+    display: flex;
+    flex-direction: now;
+    justify-content: center;
+    gap: 10px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 180px;
+}
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.4);
+    margin: 30px;
+    border-radius: 40px;
+    padding: 40px 25px;
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid transparent;
+    background: linear-gradient(100deg,  #03040a, #03040a) padding-box,
+     linear-gradient(100deg,  #087bff, #353cff, #7025ff) border-box;
+    color: white;
+    filter: drop-shadow(0 0 5px #087bff);
+}
+}
+h3 {
+    margin-top: 20px;
+}
+    .Logo_Caderno {
+        width: 20px;
+        height: 20px;
+    }
+    .Logo_computador {
+        width: 20px;
+        height: 20px;
+    }
+
+    .Logo_desempenho {
+        width: 20px;
+        height: 20px;
+    }
+    /* Configuração da barra principal */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Empurra a marca para a esquerda e o menu para a direita */
+  align-items: center;            /* Alinha tudo verticalmente no centro */
+  padding: 10px 20px;
+  background-color:  rgba(0,0,0,0.2);         /* Cor de fundo opcional, mude se quiser */
+}
+
+/* Alinhamento do Logo + Texto do lado esquerdo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;                      /* Espaço entre a imagem e o texto "Enigma" */
+  color: white;
+}
+
+.logoEnigma {
+  height: 40px;                   /* Ajuste o tamanho da sua logo aqui */
+  width: auto;
+  display: block;
+}
+.brand-name {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;         /* Reseta a altura da linha para não empurrar o texto para baixo */
+}
+                         
+
+/* Alinhamento dos itens do menu no canto direito */
+#menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;                      /* Espaço entre cada link e botão */
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilização básica para os botões (opcional) */
+#menu button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+/* Configuração da barra principal */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Empurra a marca para a esquerda e o menu para a direita */
+  align-items: center;            /* Alinha tudo verticalmente no centro */
+  padding: 10px 20px;
+  background-color:  rgba(0,0,0,0.0);       /* Cor de fundo opcional, mude se quiser */
+}
+
+/* Alinhamento do Logo + Texto do lado esquerdo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;                      /* Espaço entre a imagem e o texto "Enigma" */
+  color: white;
+}
+
+.logoEnigma {
+  height: 25px;                   /* Ajuste o tamanho da sua logo aqui */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Alinhamento dos itens do menu no canto direito */
+#menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;                      /* Espaço entre cada link e botão */
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilização básica para os botões (opcional) */
+#menu button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.tamanho_h {
+    font-size: 14px;
+}
+
+.background-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite que os elementos abaixo sejam clicáveis */
+    z-index: -1;
+}
+.Logo_3d_livroEsquerdo {
+    width: 200px;
+    height: 150px; 
+    position: absolute;
+    top: 70%;
+    left: 8%;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 15px #30E0FF);
+}
+.Logo_3d_livroEsquerdo{
+    animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.Logo_3d_colisaoEsquerda {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 52%;
+    left: 18%;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 15px #30E0FF);
+}
+.Logo_3d_colisaoEsquerda{
+    animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.Logo_3d_estatistica {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 37%;
+    left: 6%;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 15px #30E0FF);
+}
+.Logo_3d_estatistica{
+    animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.Logo_3d_cubo {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 15px #30E0FF);
+}  
+.Logo_3d_cubo{
+    animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.Logo_3d_livroDireito {
+    width: 250px;
+    height: 180px;
+    position: absolute;
+    top: 60%;
+    right: 6%;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 15px #30E0FF);
+}
+.Logo_3d_livroDireito{
+    animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.Logo_3d_colisaoDireita {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    top: 45%;
+    right: 8%;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 15px #30E0FF);
+}
+.Logo_3d_colisaoDireita{
+    animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.Logo_3d_cristal {
+    width: 120x;
+    height: 100px;
+    position: absolute;
+    top: 23%;
+    right: 16%;
+    opacity: 0.5;
+    filter: drop-shadow(0 0 15px #30E0FF);
+}
+.Logo_3d_cristal{
+    animation: float 7s ease-in-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.sobreP {
+    max-width: 850px;
+    margin: 80px auto 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+.sobreP h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffff;
+}
+.sobreP p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color:#d1d5db;
+}
+
+#menuEntrar {
+  display: flex;
+  align-items: center;
+  gap: 20px;                      /* Espaço entre cada link e botão */
+}
+
+#menuEntrar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilização básica para os botões (opcional) */
+#menuEntrar button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+#conteiner-entrar {
+    position: relative;
+    height: 200px;
+    padding: 8px 10px;
+}
+#botoes1 {
+    position: absolute;
+    top: 150%;
+    left: 43%;
+    border-radius: 30px;
+    padding: 8px 10px;
+    background-color: rgba(0,0,0,0.0);
+    border: 1.5px solid #30193f ;
+}
+#botoes2 {
+    position: absolute;
+    top: 170%;
+    left: 43%;
+    border-radius: 30px;
+    padding: 8px 10px;
+    background-color: rgba(0,0,0,0.0);
+    border: 1.5px solid #30193f ;
+}
+.esSenha {
+    position: absolute;
+    top: 190%;
+    left: 50%;
+    border-radius: 30px; 
+}
+
+#btnEntrarLogin {
+    position: absolute;
+    top: 210%;
+    left: 42.35%;
+    border-radius: 30px;
+    padding: 8px 100px;
+    background-color:#30E0FF ;
+    color: black;
+    border: 1.5px solid black ;
+}
+
+.cardEntrar {   
+    width: 250px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.4);
+    margin: 30px;
+    border-radius: 40px;
+    padding: 40px 25px;
+    text-align: center;
+    font-size: 15px;
+    border: 2px solid transparent;
+    background: linear-gradient(100deg,  #03040a, #03040a) padding-box,
+     linear-gradient(100deg,  #087bff, #353cff, #7025ff) border-box;
+    color: white;
+    filter: drop-shadow(0 0 5px #087bff);
+}
