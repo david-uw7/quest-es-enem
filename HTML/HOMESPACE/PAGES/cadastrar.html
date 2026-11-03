@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-    <html lang ="PT-BR">
+<html lang="PT-BR">
 <head>
-    
-    <meta charset ="UTF-8">
-    <title>Enigma</title>
-<link rel="stylesheet" href="/CSS/style.css">
-<link rel= "icon" type = "png" href="/ASSETS/ICONS/logo_Enigma.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma - Criar Conta</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" type="image/png" href="/ASSETS/ICONS/logo_Enigma.png">
 </head>
 <body>
     <canvas id="c"></canvas>
+
+    <!-- Barra de Navegação -->
+    <header class="navbar">
+      <div class="brand">
+        <img id="logoEnigma" class="logoEnigma" src="/ASSETS/ICONS/logo_Enigma.png" alt="Logo Enigma">
+        <span class="brand-name">Eᥒιg꧑ᥲ</span>
+      </div>
+
+      <nav id="menuEntrar">
+        <a class ="home" href="/HTML/HOMESPACE/index.html">⮌ VOLTAR</a>
+      </nav>
+    </header>
+
+    <!-- Container do Formulário de Cadastro -->
+    <div id="conteiner-cadastrar"> 
+      <div class="cardCadastrar">
+        <h1>Criar Conta</h1>
+        <p class="subtitulo-cadastro">Junte-se ao Enigma e comece sua jornada</p>
+
+        <form class="cadastro-form" onsubmit="event.preventDefault();">
+          <!-- Nome Completo -->
+          <div class="input-group">
+            <input type="text" placeholder="Nome completo" required>
+          </div>
+
+          <!-- E-mail -->
+          <div class="input-group">
+            <input type="email" placeholder="Digite seu e-mail" required>
+          </div>
+
+          <!-- Senha -->
+          <div class="input-group">
+            <input type="password" placeholder="Crie uma senha" required>
+          </div>
+
+          <!-- Confirmar Senha -->
+          <div class="input-group">
+            <input type="password" placeholder="Confirme sua senha" required>
+          </div>
+
+          <!-- Botão de Criar Conta -->
+          <button type="submit" id="btnFinalizarCadastro">Cadastrar</button>
+        </form>
+
+        <!-- Link para voltar ao Login -->
+        <div id="rodape-cadastro">
+          <p>Já tem uma conta? <a href="/HTML/HOMESPACE/PAGES/entrar.html" class="color">Fazer Login</a></p>
+        </div>
+      </div>
+    </div>
+
     <script src="/JS/script.js"></script>
 </body>
-    </html>
+</html>
